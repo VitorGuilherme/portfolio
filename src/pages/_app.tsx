@@ -1,26 +1,23 @@
-import { Inter } from "next/font/google";
-import '@radix-ui/themes/styles.css';
+import "@radix-ui/themes/styles.css";
 
-import BackgroundLayer from "../components/background-layer/background";
+import BackgroundLayer from "../components/background-layer/BackgroundLayer";
+import Viewer from "@/components/viewer/Viewer";
 
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-      <div>
+      <BackgroundLayer></BackgroundLayer>
+      <Viewer></Viewer>
       <style jsx global>{`
         body {
           margin: 0px;
           padding: 0px;
         }
-          html {
-            overflow: hidden;
-          }
+        html {
+          overflow: hidden;
+        }
       `}</style>
-    </div>
-      <BackgroundLayer></BackgroundLayer>
     </main>
   );
 }
