@@ -1,0 +1,20 @@
+{
+  "pt": {
+    "title": "Bem vindo ao meu portfólio",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contacts": "Contatos",
+    "techs": "Tecnologias",
+    "name": "Vitor Guilherme",
+    "profession": "Desenvolvedor de Software"
+  },
+  "en": {
+    "title": "Welcome to my portfolio",
+    "about": "About",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "techs": "Technologies",
+    "name": "Vitor Guilherme",
+    "profession": "Software Developer"
+  }
+}
