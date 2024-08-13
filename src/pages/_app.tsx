@@ -1,17 +1,22 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Badge, Flex } from "@radix-ui/themes";
-import '@radix-ui/themes/styles.css';
+import "@radix-ui/themes/styles.css";
 
-import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import BackgroundLayer from "../components/background-layer/BackgroundLayer";
+import Viewer from "@/components/viewer/Viewer";
 
 export default function Home() {
   return (
     <main>
-      <LanguageSwitch />
+      <BackgroundLayer></BackgroundLayer>
+      <Viewer></Viewer>
+      <style jsx global>{`
+        body {
+          margin: 0px;
+          padding: 0px;
+        }
+        html {
+          overflow: hidden;
+        }
+      `}</style>
     </main>
   );
 }
