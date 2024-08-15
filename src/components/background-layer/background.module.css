@@ -4,12 +4,12 @@
     width: 100vw;
 
     /* radial background */
-    background: rgb(52,51,99);
-    background: radial-gradient(circle, rgba(52,51,99,1) 0%, rgba(0,0,0,1) 100%);
+    /* background: rgb(52,51,99);
+    background: radial-gradient(circle, rgba(52,51,99,1) 0%, rgba(0,0,0,1) 100%); */
 
     /* linear background */
-    /* background: rgb(52,51,99);
-    background: linear-gradient(180deg, rgba(52,51,99,1) 0%, rgba(0,0,0,1) 100%); */
+    background: rgb(52,51,99);
+    background: linear-gradient(180deg, rgba(52,51,99,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .ball {
