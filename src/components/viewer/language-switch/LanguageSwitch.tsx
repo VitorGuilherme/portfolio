@@ -1,10 +1,9 @@
-import { useState } from "react";
-
+import { useLanguage } from "@/context/LanguageContext"; // Atualize o caminho conforme necessário
 import styles from "./LanguageSwitch.module.css";
 import i18n from "../../../i18n.json";
 
 const LanguageSwitch = () => {
-  const [language, setLanguage] = useState(i18n.pt);
+  const { setLanguage } = useLanguage(); // Use o hook para obter a função de definir o idioma
 
   function animation(isEnglish: boolean) {
     isEnglish
@@ -21,7 +20,8 @@ const LanguageSwitch = () => {
       <button
         className={styles.btn}
         onClick={() => {
-          setLanguage(i18n.pt), animation(false);
+          setLanguage(i18n.pt); // Defina o idioma usando o contexto
+          animation(false);
         }}
         id="pt-btn"
       >
@@ -30,17 +30,16 @@ const LanguageSwitch = () => {
       <button
         className={styles.btn}
         onClick={() => {
-          setLanguage(i18n.en), animation(true);
+          setLanguage(i18n.en); // Defina o idioma usando o contexto
+          animation(true);
         }}
         id="en-btn"
       >
         <img src="/icons/english-icon.png" width="30px" />
       </button>
-
       <div className={styles.bottom_bar}>
         <div className={styles.inside_bottom_bar} id="inside-bottom-bar" />
       </div>
-      <h2>{language.title}</h2>
     </div>
   );
 };
