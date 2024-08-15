@@ -1,4 +1,5 @@
 import CardId from "./card-id/CardId";
+import LanguageSwitch from "./language-switch/LanguageSwitch";
 import Presentation from "./presentation/Presentation";
 
 export default function Viewer() {
@@ -8,8 +9,9 @@ export default function Viewer() {
         height: '100vh',
         position: 'absolute'
     }}>
-      <CardId></CardId>
+      <LanguageSwitch/>
       <Presentation></Presentation>
+      <CardId></CardId>
     </div>
   )
 }

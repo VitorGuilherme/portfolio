@@ -30,11 +30,11 @@
 }
 
 .second {
-    bottom: -20rem;
+    bottom: -15rem;
     height: 50vh;
-    left: -30vh;
+    left: -10vh;
     width: 50vh;
-    animation: breathing 20s infinite ease-in-out;
+    animation: breathing 15s infinite ease-in-out;
     animation-delay: 1.5;
 }
 
