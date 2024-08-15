@@ -1,0 +1,37 @@
+.card_img {
+  border-radius: 100%;
+}
+
+.shadow_img {
+  content: '';
+  -webkit-box-shadow: inset 0px 0px 0px 5px rgba(8, 8, 8, 0.5);
+  -moz-box-shadow: inset 0px 0px 0px 5px rgba(8, 8, 8, 0.5);
+  box-shadow: inset 0px 0px 0px 5px rgba(8, 8, 8, 0.5);
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.text_small {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text_xsmall {
+  font-size: 0.5rem;
+}
