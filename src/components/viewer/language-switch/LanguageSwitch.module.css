@@ -1,9 +1,23 @@
 .btn {
-    width: 10vw;
-    height: 50px;
-    background: #fff;
-    border: 1px solid; 
-    text-align: center;
-    color: black;
+  width: 5vw;
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
+.bottom_bar {
+  width: 10vw;
+  height: 3px;
+  background-color: #7a7a7a7a;
+  position: relative;
+}
+
+.inside_bottom_bar {
+  width: 5vw;
+  height: 3px;
+  background-color: #d4d4d4;
+  position: absolute;
+  right: 5vw;
+  transition: right 0.6s;
 }
