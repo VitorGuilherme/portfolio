@@ -10,9 +10,8 @@
 .presentation_title {
   color: #fff;
   font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 0px 10px 5px rgba(255, 255, 255, 0.7);
-  /* margin-bottom: 10vh; */
+  font-weight: 100;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.2);
 }
 
 .circles_container {
@@ -31,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   border: solid rgba(255, 255, 255, 0.5);
   transition: transform 0.3s ease-in-out;
 }
@@ -46,3 +46,4 @@
   cursor: pointer;
   background-color: #783c46;
 }
+
